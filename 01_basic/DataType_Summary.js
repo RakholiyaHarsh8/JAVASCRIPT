@@ -1,4 +1,4 @@
-//===================================Call By Value=================================
+//=================================== Call By Value =================================
 // Primitive DataType
 //        --> Call By Value.
 //        --> Original Data Copy Kari Ne Aape Ano Je data Aave se te 
@@ -29,7 +29,7 @@ console.log(id === anotherId);
 
 
 
-//======================================Reference (Non Primitive  DataType)============
+//====================================== Call By Reference (Non Primitive  DataType)============
 
 //Array, Object, Functions
 
@@ -75,3 +75,38 @@ console.log(typeof hero);
 // Dynamically typed languages (like JavaScript):
 // Type checking is done at runtime.
 // Errors can occur at runtime, leading to potential crashes. 
+
+// +++++++++++++++++++++++++++++ ++++++++++++++++++++++++++
+
+
+// Stack Memory -> (Primitive) 
+// Primitive DataType
+// Je pan Change Thay Te Copy ma Change Thay 
+let myYoutubename = "harshcom"
+
+let anotherName = myYoutubename
+anotherName = "Kanocom"
+
+console.log(myYoutubename);
+console.log(anotherName);
+
+
+
+
+
+// Heap Memory-> (Non - Primitive)
+// Refers Male
+//  Je pan Change Thay Te Origalna Value Ni Undar Thay
+let user1 = 
+{
+    email:"user@google.com",
+    upi: "user@sbi"
+
+}
+
+let user2 = user1
+ 
+user1.email = "kano@gmail.com" //avi rite value Access Kari sakay
+
+console.log(user1.email); //print
+console.log(user2.email); //print
